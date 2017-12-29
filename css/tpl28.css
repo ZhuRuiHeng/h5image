@@ -1,0 +1,260 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+}
+
+#container
+{
+    width: 500px;
+    height: 815px;
+    position: absolute;
+    overflow: hidden; 
+}
+#container>div,#container>img
+{
+    position: absolute;
+}
+#deng
+{
+    left: 205px;
+    top: -134px;
+}
+#guang1
+{
+    left: 156px;
+    top: 108px;
+    -webkit-animation: guang1 4s linear infinite;
+}
+#guang2
+{
+    left: 9px;
+    top: 94px;
+    -webkit-animation: guang2 4s linear infinite;
+}
+#kuang1
+{
+    left: 45px;
+    top: 271px;
+    width: 410px;
+    height: 179px;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+}
+#kuang2
+{
+    left: 65px;
+    top: 303px;
+    width: 369px;
+    height: 115px;
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+}
+.divv
+{
+    width: 440px;
+    height: 600px;
+    top: 101px;
+    left: 30px;
+    background-color: #fff;
+    -webkit-transform-origin: 50% 42%;
+    overflow: hidden;
+    opacity: 0;
+}
+.divh
+{
+    width: 440px;
+    height: 310px;
+    top: 230px;
+    left: 30px;
+    background-color: #fff;
+    -webkit-transform-origin: 50% 42%;
+    overflow: hidden;
+    opacity: 0;
+}
+.boxh
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 420px;
+    height: 290px;
+    overflow: hidden;
+    opacity: 0;
+}
+.boxv
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 420px;
+    height: 580px;
+    overflow: hidden;
+    opacity: 0;
+}
+</style>
+<style type="text/css">
+@-webkit-keyframes guang1
+{
+    0%  {opacity: 0.3}
+    15% {opacity: 1}
+    85% {opacity: 1}
+    100%{opacity: 0.3}
+}
+@-webkit-keyframes guang2
+{
+    0%  {opacity: 0}
+    10% {opacity: 0.3}
+    30% {opacity: 1}
+    50% {opacity: 0.3}
+    70% {opacity: 1}
+    90% {opacity: 0.3}
+    100%{opacity: 0}
+}
+@-webkit-keyframes kuang1
+{
+    0%  {opacity: 0;-webkit-transform: scale(0.2,0.02);}
+    20% {opacity: 1;-webkit-transform: scale(1,0.02);}
+    40% {opacity: 1;-webkit-transform: scale(1,1);}
+    60% {opacity: 1;-webkit-transform: scale(1,0.5);}
+    90% {opacity: 0;-webkit-transform: scale(0.3,0.15);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes kuang2
+{
+    0%  {opacity: 0;-webkit-transform: scale(1,0.02);}
+    20% {opacity: 0;-webkit-transform: scale(1,0.02);}
+    30% {opacity: 1;-webkit-transform: scale(1,0.3);}
+    60% {opacity: 1;-webkit-transform: scale(1,2);}
+    80% {opacity: 0.7;-webkit-transform: scale(0.8,1.2);}
+    100%{opacity: 0;-webkit-transform: scale(0.6,0.9);}
+}
+@-webkit-keyframes title_in
+{
+    0%  {opacity: 0}
+    40% {opacity: 0;-webkit-transform: scale(1);}
+    70% {opacity: 0.6;-webkit-transform: scale(1.05);}
+    100%{opacity: 1;-webkit-transform: scale(1);}
+}
+@-webkit-keyframes kuang2_out
+{
+    0%  {opacity: 0;-webkit-transform: scale(0.5,0.5);}
+    20% {opacity: 1;-webkit-transform: scale(1,2);}
+    30% {opacity: 1;-webkit-transform: scale(1.05,1.9);}
+    40% {opacity: 1;-webkit-transform: scale(1.05,1.5);}
+    50% {opacity: 1;-webkit-transform: scale(1,0.4);}
+    60% {opacity: 1;-webkit-transform: scale(1,0.4);}
+    70% {opacity: 1;-webkit-transform: scale(1,0.04);}
+    90% {opacity: 0;-webkit-transform: scale(0.3,0.02);}
+    100%{opacity: 0}
+}
+@-webkit-keyframes title_out
+{
+    0%  {opacity: 1;-webkit-transform: scale(1);}
+    10% {opacity: 1;-webkit-transform: scale(1.05);}
+    30% {opacity: 0;-webkit-transform: scale(1);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes kuang1_out
+{
+    0%  {opacity: 0}
+    10% {opacity: 0;-webkit-transform: scale(0.6,0.2);}
+    20% {opacity: 1;-webkit-transform: scale(1.05,0.4);}
+    30% {opacity: 1;-webkit-transform: scale(1.05,0.65);}
+    40% {opacity: 1;-webkit-transform: scale(1.05,0.95);}
+    50% {opacity: 1;-webkit-transform: scale(1,1.1);}
+    60% {opacity: 1;-webkit-transform: scale(1,0.7);}
+    70% {opacity: 1;-webkit-transform: scale(0.9,0.03);}
+    90% {opacity: 0;-webkit-transform: scale(0.3,0.02);}
+    100%{opacity: 0}
+}
+@-webkit-keyframes div1h_in
+{
+    0%  {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    35% {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    40% {opacity: 1;-webkit-transform: scale(1.05,0.01);}
+    80% {opacity: 1;-webkit-transform: scale(1,1);}
+    100%{opacity: 1;-webkit-transform: scale(1,1);}
+}
+@-webkit-keyframes div1v_in
+{
+    0%  {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    35% {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    40% {opacity: 1;-webkit-transform: scale(1.05,0.01);}
+    90% {opacity: 1;-webkit-transform: scale(0.97,1.03);-webkit-animation-function-timing: ease-out;}
+    100% {opacity: 1;-webkit-transform: scale(1,1);}
+    /*100%{opacity: 1;-webkit-transform: scale(1,1);}*/
+}
+@-webkit-keyframes div1v_out
+{
+    0% {opacity: 1;-webkit-transform: scale(1,1);}
+    10%{opacity: 1;-webkit-transform: scale(0.97,1.03);}
+    30%{opacity: 1;-webkit-transform: scale(1.05,0.01);}
+    35% {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    100%{opacity: 0}
+}
+@-webkit-keyframes div1h_out
+{
+    0% {opacity: 1;-webkit-transform: scale(1,1);}
+    10%{opacity: 1;-webkit-transform: scale(0.97,1.03);}
+    30%{opacity: 1;-webkit-transform: scale(1.05,0.01);}
+    35% {opacity: 0;-webkit-transform: scale(1.05,0.01);}
+    100%{opacity: 0}
+}
+@-webkit-keyframes box_out
+{
+    0% {opacity: 1}
+    30%{opacity: 0}
+    100%{opacity: 0}
+}
+@-webkit-keyframes box_in
+{
+    0%  {opacity: 0}
+    60% {opacity: 0}
+    100%{opacity: 1}
+}
+@-webkit-keyframes shan
+{
+    0%  {opacity: 0;-webkit-transform: scale(0) rotate(0deg);}
+    14% {opacity: 1;-webkit-transform: scale(1) rotate(360deg);}
+    28% {opacity: 0;-webkit-transform: scale(0) rotate(720deg);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes xuehua
+{
+    0%  {opacity: 0;-webkit-transform: translate(0px,0px) rotate(0deg);}
+    16% {opacity: 1;-webkit-transform: translate(0px,30px) rotate(15deg);}
+    60%{opacity: 0;-webkit-transform: translate(0px,120px) rotate(60deg);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes word_ani
+{
+    0%  {opacity: 0}
+    8%  {opacity: 0}
+    10%  {opacity: 1}
+    20% {opacity: 1}
+    22% {opacity: 0}
+    24% {opacity: 0}
+    26% {opacity: 1}
+    28% {opacity: 1}
+    30% {opacity: 0}
+    32% {opacity: 0}
+    34% {opacity: 1}
+    36% {opacity: 1}
+    38% {opacity: 0}
+    40% {opacity: 0}
+    42% {opacity: 1}
+    44% {opacity: 1}
+    46% {opacity: 0}
+    48% {opacity: 1}
+    50% {opacity: 1}
+    80% {opacity: 1}
+    82% {opacity: 0}
+    100%{opacity: 0}
+}

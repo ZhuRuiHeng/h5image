@@ -1,0 +1,172 @@
+@-webkit-keyframes lt_in
+	{
+		0%   {-webkit-transform: translate(-500px, -750px)}
+		80%  {-webkit-transform: translate(40px, 40px)}
+		100% {-webkit-transform: translate(0px, 0px)}
+	}
+
+	@-webkit-keyframes lb_in
+	{
+		0%   {-webkit-transform: translate(-500px, 750px)}
+		80%  {-webkit-transform: translate(40px, -40px)}
+		100% {-webkit-transform: translate(0px, 0px)}
+	}
+
+	@-webkit-keyframes zoom_in
+	{
+		0%   {-webkit-transform: scale(0, 0)}
+		80%  {-webkit-transform: scale(1.2, 1.2)}
+		100% {-webkit-transform: scale(1, 1);}
+	}
+
+	@-webkit-keyframes rb_out
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		20%  {-webkit-transform: translate(-40px, -40px)}
+		100% {-webkit-transform: translate(500px, 750px)}
+	}
+
+	@-webkit-keyframes rt_out
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		20%  {-webkit-transform: translate(-40px, 40px)}
+		100% {-webkit-transform: translate(500px, -750px)}
+	}
+
+	@-webkit-keyframes zoom_out
+	{
+		0%   {-webkit-transform: scale(1, 1)}
+		20%  {-webkit-transform: scale(1.2, 1.2)}
+		100% {-webkit-transform: scale(0, 0)}
+	}
+
+	@-webkit-keyframes mm1
+	{
+		0%   {-webkit-transform: translate(-50px, 0px)}
+		100% {-webkit-transform: translate(0px, 0px)}
+	}
+
+	@-webkit-keyframes mm2
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(-50px, 0px)}
+	}
+
+	@-webkit-keyframes mm3
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(0px, -50px)}
+	}
+
+	@-webkit-keyframes mm4
+	{
+		0%   {-webkit-transform: translate(0px, -50px)}
+		100% {-webkit-transform: translate(0px, 0px)}
+	}
+
+	@-webkit-keyframes mm5
+	{
+		0%   {-webkit-transform: translate(-50px, -50px)}
+		100% {-webkit-transform: translate(0px, 0px)}
+	}
+
+	@-webkit-keyframes mm6
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(-50px, -50px)}
+	}
+
+	@-webkit-keyframes mm7
+	{
+		0%   {-webkit-transform: translate(-50px, -50px)}
+		100% {-webkit-transform: translate(0px, -100px)}
+	}
+
+	@-webkit-keyframes mm8
+	{
+		0%   {-webkit-transform: translate(-50px, -50px)}
+		100% {-webkit-transform: translate(-100px, 0px)}
+	}
+
+	@-webkit-keyframes m1
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(50px, 0px);}
+	}
+
+	@-webkit-keyframes m2
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(-50px, 0px);}
+	}
+
+	@-webkit-keyframes m3
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(0px, 50px);}
+	}
+
+	@-webkit-keyframes m4
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(0px, -50px);}
+	}
+
+	@-webkit-keyframes m5
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(50px, 50px);}
+	}
+
+	@-webkit-keyframes m6
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(50px, -50px);}
+	}
+
+	@-webkit-keyframes m7
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(-50px, 50px);}
+	}
+
+	@-webkit-keyframes m8
+	{
+		0%   {-webkit-transform: translate(0px, 0px)}
+		100% {-webkit-transform: translate(-50px, -50px);}
+	}
+
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background-color: black;
+	}
+
+	#container
+	{
+		position: absolute;
+/* 		left: 0px;
+		top: 100px; */
+		width: 500px;
+		height: 100%;
+		background-color: black;
+		overflow: hidden;
+	}
+
+	#cover
+	{
+		position: absolute;
+		z-index: 0;
+		overflow: hidden;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#coverimg
+	{
+		position: absolute;
+		z-index: 0;
+		margin: 0px;
+		padding: 0px;
+	}

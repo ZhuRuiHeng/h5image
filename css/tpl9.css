@@ -1,0 +1,946 @@
+*
+
+	{
+
+        padding: 0px;
+
+        margin: 0px;
+
+        -webkit-box-sizing: border-box;
+
+	}
+
+
+
+    body
+
+    {
+
+        background-color: black;
+
+    }
+
+    #div_player{
+
+    	background: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/bg.jpg) no-repeat;
+
+    	background-size: cover;
+
+    } 
+
+
+
+	#biyeji_container
+
+	{
+
+		position: absolute;
+
+		width:  500px;
+
+		height: 800px;
+
+		overflow:hidden;
+
+	}
+
+
+
+	.biyeji_pic
+
+	{
+
+		position: absolute;
+
+		display: none;
+
+		/*change*/
+
+	}
+
+
+
+	#biyeji_page0_0
+
+	{
+
+		top:  372px;
+
+		left: 233px;
+
+		width: 191px;
+
+		height: 189px;
+
+	}
+
+
+
+	#biyeji_page0_0 > div
+
+	{
+
+		position: absolute;
+
+		width: 145px;
+
+		height: 135px;
+
+		-webkit-transform: rotate(-13deg);
+
+		top: 23px;
+
+		left: 23px;
+
+		overflow: hidden;
+
+
+
+	}
+
+
+
+	#biyeji_page0_1
+
+	{
+
+		top:  220px;
+
+		left: 280px;
+
+		width: 155px;
+
+		height: 152px;
+
+	}
+
+
+
+	#biyeji_page0_1 > div
+
+	{
+
+		position: absolute;
+
+		width: 112px;
+
+		height: 110px;
+
+		-webkit-transform: rotate(-15deg);
+
+		top: 18px;
+
+		left: 20px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page0_2
+
+	{
+
+		top:  200px;
+
+		left: 58px;
+
+		width: 217px;
+
+		height: 215px;
+
+
+
+	}
+
+
+
+	#biyeji_page0_2 > div
+
+	{
+
+		position: absolute;
+
+		width: 165px;
+
+		height: 160px;
+
+		-webkit-transform: rotate(11deg);
+
+		left: 23px;
+
+		top: 19px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page1_0
+
+	{
+
+		top:  180px;
+
+		left: 29px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/4.png);
+
+		width: 305px;
+
+		height: 239px;
+
+	}
+
+
+
+	#biyeji_page1_0 > div
+
+	{
+
+		position: absolute;
+
+		width: 254px;
+
+		height: 180px;
+
+		-webkit-transform: rotate(-8deg);
+
+		top: 28px;
+
+		left: 18px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page1_1
+
+	{
+
+		top:  400px;
+
+		left: 252px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/5.png);
+
+		width: 150px;
+
+		height: 148px;
+
+	}
+
+
+
+	#biyeji_page1_1 > div
+
+	{
+
+		position: absolute;
+
+		width: 113px;
+
+		height: 110px;
+
+		-webkit-transform: rotate(13deg);
+
+		top: 18px;
+
+		left: 19px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page1_2
+
+	{
+
+		top:  260px;
+
+		left: 332px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/6.png);
+
+		width: 130px;
+
+		height: 125px;
+
+	}
+
+
+
+	#biyeji_page1_2 > div
+
+	{
+
+		position: absolute;
+
+		width: 113px;
+
+		height: 110px;
+
+		-webkit-transform: rotate(-2deg);
+
+		top: 5px;
+
+		left: 9px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page1_3
+
+	{
+
+		top:  430px;
+
+		left: 88px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/7.png);
+
+		width: 135px;
+
+		height: 131px;
+
+	}
+
+
+
+	#biyeji_page1_3 > div
+
+	{
+
+		position: absolute;
+
+		width: 106px;
+
+		height: 102px;
+
+		-webkit-transform: rotate(-9deg);
+
+		top: 14px;
+
+		left: 17px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page2_0
+
+	{
+
+		top: 230px;
+
+		left: 62px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/8.png);
+
+		width: 377px;
+
+		height: 286px;
+
+	}
+
+
+
+	#biyeji_page2_0 > div
+
+	{
+
+		width: 335px;
+
+		height: 232px;
+
+		position: absolute;
+
+		-webkit-transform: rotate(1deg);
+
+		top: 18px;
+
+		left: 21px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page3_0
+
+	{
+
+		top: 385px;
+
+		left: 231px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/9.png);
+
+		width: 235px;
+
+		height: 169px;
+
+	}
+
+
+
+	#biyeji_page3_0 > div
+
+	{
+
+		position: absolute;
+
+		width: 188px;
+
+		height: 120px;
+
+		-webkit-transform: rotate(7.5deg);
+
+		top: 20px;
+
+		left: 22px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page3_1
+
+	{
+
+		top: 170px;
+
+		left: 45px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/10.png);
+
+		width: 315px;
+
+		height: 240px;
+
+	}
+
+
+
+	#biyeji_page3_1 > div
+
+	{
+
+		position: absolute;
+
+		width: 259px;
+
+		height: 168px;
+
+		-webkit-transform: rotate(-10deg);
+
+		top: 29px;
+
+		left: 22px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page4_0
+
+	{
+
+		top: 168px;
+
+		left: 50px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/11.png);
+
+		width: 262px;
+
+		height: 260px;
+
+	}
+
+
+
+	#biyeji_page4_0 > div
+
+	{
+
+		position: absolute;
+
+		width: 182px;
+
+		height: 175px;
+
+		-webkit-transform: rotate(25deg);
+
+		left: 41px;
+
+		top: 37px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page4_1
+
+	{
+
+		top: 392px;
+
+		left: 265px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/12.png);
+
+		width: 174px;
+
+		height: 179px;
+
+	}
+
+
+
+	#biyeji_page4_1 > div
+
+	{
+
+		position: absolute;
+
+		width: 150px;
+
+		height: 148px;
+
+		top: 9px;
+
+		left: 11px;
+
+		-webkit-transform: rotate(1deg);
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page5_0
+
+	{
+
+		top: 398px;
+
+		left: 193px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/13.png);
+
+		width: 232px;
+
+		height: 225px;
+
+	}
+
+
+
+	#biyeji_page5_0 > div
+
+	{
+
+		width: 158px;
+
+		height: 154px;
+
+		position: absolute;
+
+		-webkit-transform: rotate(-20deg);
+
+		left: 31px;
+
+		top: 32px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	#biyeji_page5_1
+
+	{
+
+		top: 210px;
+
+		left: 40px;
+
+		background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl9/14.png);
+
+		width: 292px;
+
+		height: 229px;
+
+	}
+
+
+
+	#biyeji_page5_1 > div
+
+	{
+
+		width: 241px;
+
+		height: 168px;
+
+		position: absolute;
+
+		-webkit-transform: rotate(-12deg);
+
+		left: 23px;
+
+		top: 28px;
+
+		overflow: hidden;
+
+	}
+
+
+
+	 @-webkit-keyframes aa_in_bounce_down
+
+    {
+
+        0%{
+
+            opacity:0;
+
+            -webkit-transform:translateY(-2000px)
+
+        }
+
+        60%{
+
+            opacity:1;
+
+            -webkit-transform:translateY(30px)
+
+        }
+
+        80%{
+
+            -webkit-transform:translateY(-10px)
+
+        }
+
+        100%{
+
+            -webkit-transform:translateY(0)
+
+        }
+
+    }
+
+
+
+    @-webkit-keyframes aa_out_bounce_down
+
+    {
+
+        0%{
+
+            -webkit-transform:translateY(0)
+
+        }
+
+        20%{
+
+            opacity:1;
+
+            -webkit-transform:translateY(-20px)
+
+        }
+
+        100%{
+
+            opacity:0;
+
+            -webkit-transform:translateY(2000px)
+
+        }
+
+    }
+
+/*---ÍùÉÏÌø---*/
+
+    @-webkit-keyframes aa_in_bounce_up
+
+    {
+
+        0%{
+
+            opacity:0;
+
+            -webkit-transform:translateY(2000px)
+
+        }
+
+        60%{
+
+            opacity:1;
+
+            -webkit-transform:translateY(-30px)
+
+        }
+
+        80%{
+
+            -webkit-transform:translateY(10px)
+
+        }
+
+        100%{
+
+            -webkit-transform:translateY(0)
+
+        }
+
+    }
+
+    @-webkit-keyframes aa_out_bounce_up
+
+    {
+
+       0%{
+
+        -webkit-transform:translateY(0)
+
+        }
+
+        20%{
+
+            opacity:1;
+
+            -webkit-transform:translateY(20px)
+
+        }
+
+        100%{
+
+            opacity:0;
+
+            -webkit-transform:translateY(-2000px)
+
+        }
+
+    }   
+
+/*---Íù×óÌø---*/
+
+    @-webkit-keyframes aa_in_bounce_left
+
+    {
+
+        0%{
+
+            opacity:0;
+
+            -webkit-transform:translateX(-2000px)
+
+        }
+
+        60%{
+
+            opacity:1;
+
+            -webkit-transform:translateX(30px)
+
+        }
+
+        80%{
+
+            -webkit-transform:translateX(-10px)
+
+        }
+
+        100%{
+
+            -webkit-transform:translateX(0)
+
+        }
+
+    }
+
+    @-webkit-keyframes aa_out_bounce_left0
+
+    {
+
+        0%{
+
+            -webkit-transform:translateX(0)
+
+        }
+
+        20%{
+
+            opacity:1;
+
+            -webkit-transform:translateX(20px)
+
+        }
+
+        100%{
+
+            opacity:0;
+
+            -webkit-transform:translateX(-2000px)
+
+        }
+
+    }
+
+
+
+/*---ÍùÓÒÌø---*/
+
+    @-webkit-keyframes aa_in_bounce_right0
+
+    {
+
+        0%{
+
+            opacity:0;
+
+            -webkit-transform:translateX(2000px)
+
+        }
+
+        60%{
+
+            opacity:1;
+
+            -webkit-transform:translateX(-30px)
+
+        }
+
+        80%{
+
+            -webkit-transform:translateX(10px)
+
+        }
+
+        100%{
+
+            -webkit-transform:translateX(0)
+
+        }
+
+    }
+
+    @-webkit-keyframes aa_out_bounce_right
+
+    {
+
+        0%{
+
+            -webkit-transform:translateX(0)
+
+        }
+
+        20%{
+
+            opacity:1;
+
+            -webkit-transform:translateX(-20px)
+
+        }
+
+        100%{
+
+            opacity:0;
+
+        -webkit-transform:translateX(2000px)
+
+        }
+
+    }
+
+    
+
+    @-webkit-keyframes aa_in_bounce_center
+
+    {
+
+        0%{
+
+            opacity:0;
+
+            -webkit-transform:scale(.3)
+
+        }
+
+        50%{
+
+            opacity:1;
+
+            -webkit-transform:scale(1.05)
+
+        }
+
+        70%{
+
+            -webkit-transform:scale(.9)
+
+        }
+
+        100%{
+
+            -webkit-transform:scale(1)
+
+        }
+
+    }
+
+
+
+    @-webkit-keyframes piaoluo
+
+    {
+
+    	from{-webkit-transform:translate(0px,0px) rotate(0deg);}
+
+    	to{-webkit-transform:translate(-400px,1200px) rotate(360deg);}
+
+    }
+
+    @-webkit-keyframes fadein
+
+    {
+
+    	from  {opacity: 0}
+
+    	to    {opacity: 1}
+
+    }
+
+    @-webkit-keyframes fadeout
+
+    {
+
+    	from  {opacity: 1}
+
+    	to    {opacity: 0}
+
+    }
+

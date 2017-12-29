@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no,address=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="renderer" content="webkit">
+    <meta name="Copyright" content="WeiWeiYin">
+    <title>51</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./js/ctrl.min.js?t=13" type="text/javascript"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <script src="./js/tpl51.min.js?t=3" type="text/javascript"></script>
+    <script src="./js/viewport.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/main.min.css?t=2" />
+    <link type="text/css" rel="stylesheet" href="./css/tpl51.min.css?t=1" />
+</head>
+<body style="background-color: white;">
+    <!-- music -->
+    <div id="wraper_music">
+        <audio loop="loop" autoplay="autoplay" id="audio_bgmusic" 
+               src="http://ws.stream.qqmusic.qq.com/105160947.m4a?fromtag=46"></audio>
+        <a id="div_music" class="fl" style="float: left;">
+            <div id="btn_play_music" class="c_btn_play_music_playing"></div>
+        </a>
+    </div>
+    <!-- 内容 -->
+    <section>
+        <div id="div_player">
+            
+        </div>
+    </section>
+</body>
+<script type="text/javascript">
+//图片留言+地址
+// var images = [{$urls}];
+// var c_tp={$info.tpl};
+// var c_music={$info.music};
+//图片留言+地址
+var images = [
+        [0,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [1,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [2,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [3,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [4,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [5,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [6,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [7,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"],
+        [8,"http://ovhvevt35.bkt.clouddn.com/photo/activeBg.png"]
+    ];
+var c_tp=51;
+// 102386036
+var c_music={"id":111,"type":"sweet","name":"齐秦","musicUrl":"http://ws.stream.qqmusic.qq.com/105160947.m4a?fromtag=46"};
+
+// function onSaveTitle() {
+//     var title = $("#edit_album_title");
+//     //修改标题
+//     $.post('./changeTitle', {
+//         id: $("#photoid").val(),
+//         title: title.val()
+//     }, function(data) {
+//         if (data == 1) {
+//             location.reload();
+//         }
+//     });
+// }
+// function saveMusic() {
+//     //修改音乐编号
+//     $.post('./changeMusic', {
+//         id: $("#photoid").val(),
+//         music: JSON.stringify(c_music)
+//     }, function(data) {
+//         console.log(data);
+//     });
+// }
+
+function is_weixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+$(document).ready(function() {
+    $("#wrapper_player_cover_bkgnd").css("height", $(window).height()); // - 70
+    $("#div_player").css("height", $(window).height());
+    $("#div_player").css("width", $(window).width());
+    if(!is_weixin())
+    {
+        musicView.init();
+    }
+    playPhoto();
+});
+</script>
+
+</html>

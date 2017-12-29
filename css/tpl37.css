@@ -1,0 +1,340 @@
+*
+    {
+        padding: 0px;
+        margin: 0px;
+        -webkit-box-sizing: border-box;
+    }
+
+    body
+    {
+        /*background-color: black;*/
+    }
+
+    #container
+    {
+        width: 500px;
+        height: 815px;
+        position: absolute;
+        overflow: hidden;
+        /*background-image: url(http://hg.jielanhua.cn/ps/love1/love1_back.jpg); */
+    }
+    #container > img, #container > div
+    {
+        position: absolute;
+    }
+
+    #div1
+    {
+        left: 0px;
+        top: 86px;
+    }
+    #guang
+    {
+        left: 6px;
+        top: 370px;
+    }
+    #zi11
+    {
+        left: 126px;
+        top: 687px;
+    }
+    #zi12
+    {
+        left: 35px;
+        top: 713px;
+    }
+    #love
+    {
+        left: 62px;
+        top: 485px;
+    }
+    @-webkit-keyframes fadein
+    {
+        from  {opacity: 0}
+        to    {opacity: 1}
+    }
+    @-webkit-keyframes fadeout
+    {
+        from  {opacity: 1}
+        to    {opacity: 0}
+    }
+
+    @-webkit-keyframes guangup
+    {
+        from  {-webkit-transform: translate(0px,400px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    #box1
+    {
+        width: 478px;
+        height: 478px;
+        top: 6px;
+        left: 14px;
+        position: absolute;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask1.png);
+    }
+    #div2
+    {
+        left: -26px;
+        top: 149px;
+        width: 553px;
+        height: 487px;
+    }
+    #box2
+    {
+        position: absolute;
+        top: 22px;
+        left: 21px;
+        width: 510px;
+        height: 443px;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask2.png);
+        overflow: hidden;
+    }
+    #zi21
+    {
+        left: 175px;
+        top: 87px;
+    }
+    #zi22
+    {
+        left: 175px;
+        top: 111px;
+    }
+    #div3
+    {
+        left: -7.5px;
+        top: 106px;
+    }
+    #box3
+    {
+        position: absolute;
+        top: 26px;
+        left: 24px;
+        width: 464px;
+        height: 358px;
+        overflow: hidden;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask3.png);
+    }
+    #zi31
+    {
+        left: 54px;
+        top: 551px;
+    }
+    #zi32
+    {
+        left: 88px;
+        top: 573px;
+    }
+    #div41
+    {
+        width: 341px;
+        height: 330px;
+        left: 225px;
+        top: 56px;
+    }
+    #box41
+    {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        width: 310px;
+        height: 310px;
+        overflow: hidden;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask41.png);
+    }
+    #div42
+    {
+        left: -54px;
+        top: 226px;
+        width: 385px;
+        height: 377px;
+    }
+    #box42
+    {
+        position: absolute;
+        width: 362px;
+        height: 357px;
+        left: 11px;
+        top: 10px;
+        overflow: hidden;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask42.png);
+    }
+    #zi41
+    {
+        left: 337px;
+        top: 466px;
+    }
+    #zi42
+    {
+        left: 338px;
+        top: 488px;
+    }
+    #zi43
+    {
+        left: 338px;
+        top: 508px;
+    }
+    #zi44
+    {
+        left: 338px;
+        top: 530px;
+    }
+    #div51
+    {
+        left: -72px;
+        top: 72px;
+    }
+    #box51
+    {
+        position: absolute;
+        width: 425px;
+        height: 347px;
+        overflow: hidden;
+        top: 17px;
+        left: 16px;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask51.png);
+    }
+    #div52
+    {
+        left: 171px;
+        top: 279px;
+    }
+    #box52
+    {
+        position: absolute;
+        left: 14px;
+        top: 17px;
+        width: 350px;
+        height: 290px;
+        overflow: hidden;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask52.png);
+    }
+    #zi51
+    {
+        left: 20px;
+        top: 521px;
+    }
+    #zi52
+    {
+        left: 21px;
+        top: 542px;
+    }
+    #zi53
+    {
+        left: 21px;
+        top: 563px;
+    }
+    #zi54
+    {
+        left: 20px;
+        top: 583px;
+    }
+    #div61
+    {
+        left: 245px;
+        top: 4.5px;
+    }
+    #box61
+    {
+        width: 273px;
+        height: 273px;
+        top: 9px;
+        left: 12px;
+        position: absolute;
+        overflow: hidden;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask61.png);
+    }
+    #div62
+    {
+        left: -42px;
+        top: 134px;
+    }
+    #box62
+    {
+        top: 8px;
+        left: 11px;
+        width: 357px;
+        height: 357px;
+        overflow: hidden;
+        position: absolute;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask63.png);
+    }
+    #div63
+    {
+        left: 232px;
+        top: 332px;
+    }
+    #box63
+    {
+        width: 273px;
+        height: 273px;
+        top: 9px;
+        left: 11px;
+        position: absolute;
+        -webkit-mask: url(http://referer-image.szwwy.com/coolphoto/img/tpl37/mask61.png);
+    }
+    #zi61
+    {
+        left: 53px;
+        top: 546px;
+    }
+    #zi62
+    {
+        left: 53px;
+        top: 567px;
+    }
+    #zi63
+    {
+        left: 53px;
+        top: 588px;
+    }
+    #pagetitle
+    {
+        width: 440px;
+        left: 30px;
+        /*background-color: #fff;*/
+        font-size: 44px;
+        color: #C790A1;
+        height: 160px;
+        top: 300px;
+    }
+    @-webkit-keyframes skewtitle
+    {
+        from  {-webkit-transform: skewX(0deg);}
+        to    {-webkit-transform: skewX(90deg);}
+    }
+    @-webkit-keyframes fade_in_out
+    {
+        0%   {opacity: 0}
+        30%  {opacity: 1}
+        70%  {opacity: 1}
+        100% {opacity: 0}
+    }
+    #love1
+    {
+        left: 62px;
+        top: 594px
+    }
+    #guang1
+    {
+        left: 10px;
+        top: 487px;
+    }
+    @-webkit-keyframes hua3
+    {
+        0%  {-webkit-transform: translate(0px,0px) rotate(0deg); }
+        70% {-webkit-transform: translate(-600px,700px) rotate(500deg);}
+        100%{-webkit-transform: translate(-600px,700px) rotate(500deg);}
+    }
+    @-webkit-keyframes hua1
+    {
+        0%  {-webkit-transform: translate(0px,0px) rotate(0deg);}
+        80%{-webkit-transform: translate(-450px,900px) rotate(500deg);}
+        100%{-webkit-transform: translate(-450px,900px) rotate(500deg);}
+    }
+    @-webkit-keyframes hua2
+    {
+        0%  {-webkit-transform: translate(0px,0px) rotate(0deg);}
+        80%{-webkit-transform: translate(450px,900px) rotate(500deg);}
+        100%{-webkit-transform: translate(450px,900px) rotate(500deg);}
+    }

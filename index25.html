@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no,address=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="renderer" content="webkit">
+    <meta name="Copyright" content="WeiWeiYin">
+    <title>快乐雪人</title>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="./js/ctrl.min.js?t=13" type="text/javascript"></script>
+    <!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script> -->
+    <script src="./js/tpl51.min.js?t=3" type="text/javascript"></script>
+    <script src="./js/viewport.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/main.min.css?t=2" />
+    <link type="text/css" rel="stylesheet" href="./css/tpl51.min.css?t=1" />
+</head>
+<style>
+    .move{
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    z-index: 6; 
+    top: 40%; 
+    left: 50%;  
+    -webkit-transform: translate(-50%,-50%);  
+    -ms-transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+.move img{
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 6; 
+    top: 40%; 
+    left: 50%;  
+    -webkit-transform: translate(-50%,-50%);  
+    -ms-transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%)
+}
+.move p{
+    margin: 0 auto;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    text-align: center;
+    z-index: 6; 
+    top: 70%; 
+    left: 50%;  
+    -webkit-transform: translate(-50%,-50%);  
+    -ms-transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 20px;
+}
+</style>
+<body style="background-color: white;">
+    <!-- music -->
+    <div id="wraper_music">
+        <audio loop="loop" autoplay="autoplay" id="audio_bgmusic" 
+               src="http://ws.stream.qqmusic.qq.com/105160947.m4a?fromtag=46"></audio>
+        <a id="div_music" class="fl" style="float: left;">
+            <div id="btn_play_music" class="c_btn_play_music_playing"></div>
+        </a>
+    </div>
+    <!-- 加载中 -->
+    <div class="move" id="move">
+        <img src="./img/move.gif" alt="">
+        <p>加载中</p>
+    </div>
+    <!-- 内容 -->
+    <section>
+        <div id="div_player">
+            
+        </div>
+    </section>
+</body>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript">
+//图片留言+地址
+// var images = [{$urls}];
+// var c_tp={$info.tpl};
+// var c_music={$info.music};
+//图片留言+地址
+//   
+const apiurl = 'https://friend-guess.playonwechat.com/v1';
+var kid = "";
+var sign = "";
+let images = '';
+let _images = [];
+var c_tp=51;
+// 102386036;
+var c_music = { "id": 111, "type": "sweet", "name": "范玮琪-大约在冬季", "musicUrl": "http://ws.stream.qqmusic.qq.com/105160947.m4a?fromtag=46" };
+// alert(window.location.href);
+(function(){
+    var _href = decodeURIComponent(window.location.href);
+    //var _href = decodeURIComponent('https://friend-guess.playonwechat.com/assets/html/index25.html?kid=4321&sign=ea351f20b3a99eeacb558494bd3ac48a&pw_id=3259&a=0.9035446454667266');
+    console.log(_href);
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+        var str = decodeURIComponent(url.substr(1));sign
+        strs = str.split("&");
+        for (var i = 0; i < strs.length; i++) {
+            theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+        }
+        }
+        return theRequest;
+    }
+    var Request = new Object();
+    Request = GetRequest();
+    kid = Request['kid'];
+    sign = Request['sign'];
+    pw_id = Request['pw_id'];
+    localStorage.setItem("kid", kid);
+    localStorage.setItem("sign", sign);
+    localStorage.setItem("pw_id",pw_id );
+    // alert(kid);
+    // alert(sign);
+    // alert(pw_id);
+})();
+    if(!sign){
+        sign= sessionStorage.getItem("sign");
+        kid= sessionStorage.getItem("kid");
+    }
+    if(pw_id){
+        //console.log('pw_id:',pw_id);
+        $.ajax({
+            type:"get",
+            url : apiurl+'/photo/h5-template-photos?sign='+sign+'&operator_id='+ kid,
+            data: {
+                pw_id: pw_id
+            },
+            dataType : 'json',
+            success : function(res){
+                let list = res.data;
+                //console.log(list);
+                for(var i = 0;i<list.length; i++){
+                    _images.push(i);
+                    _images.push(list[i].photo_url);
+                }
+                let chunk = function (array, size) {
+                    let [start, end, result] = [null, null, []];
+                    for (let i = 0; i < Math.ceil(array.length / size); i++) {
+                        start = i * size;
+                        end = start + size;
+                        result.push(array.slice(start, end));
+                    }
+                    return result;
+                };
+                //console.log(chunk(_images, 2));
+                images = chunk(_images, 2);
+                console.log('images:',images);
+                setTimeout(function(){
+                    $("#move").hide();
+                },3000)
+                // weixin
+                function is_weixin(){
+                    var ua = navigator.userAgent.toLowerCase();
+                    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+                //music  .c_btn_play_music_paused  .c_btn_play_music_playing
+                $("#div_music").click(function(){
+                    var audio = document.getElementById('audio_bgmusic');
+                    if($("#btn_play_music").hasClass('c_btn_play_music_playing')){
+                        console.log('pause');
+                        audio.pause();
+                        $("#btn_play_music").removeClass('c_btn_play_music_playing');
+                        $("#btn_play_music").addClass('c_btn_play_music_paused');
+                    }else{
+                        console.log('play');
+                        audio.play();
+                        $("#btn_play_music").removeClass('c_btn_play_music_paused');
+                        $("#btn_play_music").addClass('c_btn_play_music_playing')
+                    }
+                })
+                //imagemove
+                $(document).ready(function() {
+                    //$("#wrapper_player_cover_bkgnd").css("height", $(window).height()); // - 70
+                    $("#div_player").css("height", $(window).height());
+                    $("#div_player").css("width", $(window).width());
+                    if(!is_weixin())
+                    {
+                        musicView.init();
+                    }
+                    playPhoto();
+                });
+            },
+            error:function(e){
+                console.log(e);
+            }
+        })
+    }
+
+
+</script>
+
+</html>

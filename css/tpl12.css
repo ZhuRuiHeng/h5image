@@ -1,0 +1,392 @@
+*
+	{
+		padding: 0px;
+		margin: 0px;
+		-webkit-box-sizinf:border:border-box;
+	}
+
+	body
+	{
+		background-color:black;
+	}
+
+	#container
+	{
+	    width: 500px;
+	    height: 815px;
+	    position: absolute;
+	    overflow: hidden;
+    }
+    #div_player{
+	    background-image: url(http://referer-image.szwwy.com/coolphoto/img/tpl12/bg2.jpg);
+        background-size: cover; 
+        
+    }
+
+    #cat{
+          position: absolute;
+          width: 167px;
+          height: 277px;
+          left: 36px;
+          top: 437px;
+          z-index: 9;
+          -webkit-transform-origin: 50% 100%;
+          -webkit-animation:cat 1s linear infinite alternate;
+    }
+
+    @-webkit-keyframes cat{
+        from  {-webkit-transform: rotate(0deg);}
+        to    {-webkit-transform: rotate(5deg);}
+    }
+
+
+    #mouse{
+        position: absolute;
+        width:118px;
+        height:178px; 
+        left:382px;
+        top:223px;
+        z-index: 8;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-animation:mouse 1s linear infinite alternate;
+    }
+
+    @-webkit-keyframes mouse{
+        from  {-webkit-transform: rotate(0deg);}
+        to    {-webkit-transform: rotate(5deg);}
+    }
+
+    #catmouth{
+        position: absolute;
+        width:309px;
+        height: 87px;
+        left:-30px;
+        top:507px;
+
+        z-index: 10;
+        -webkit-transform-origin: 53% 50%;
+        -webkit-animation:catmouth 1s linear infinite alternate;
+    }
+
+        @-webkit-keyframes catmouth{
+        from  {-webkit-transform: rotate(0deg);opacity:1;}
+        to    {-webkit-transform: rotate(10deg);opacity:0.5;}
+    }
+
+    #duck{
+        position: absolute;
+        width:104px;
+        height:121px; 
+        left:373px;
+        top:483px;
+        z-index:8;
+        -webkit-transform-origin: 50% 0%;
+        -webkit-animation:duck 1s linear infinite alternate;
+    }
+
+        @-webkit-keyframes duck{
+        from  {-webkit-transform: rotate(0deg);}
+        to    {-webkit-transform: rotate(-10deg);}
+    }
+
+    #robot{
+		  position: absolute;
+		  width: 68px;
+		  height: 73px;
+		  left: 15px;
+		  top: 327px;
+          -webkit-transform-origin: 50% 0%;
+          -webkit-animation:robot 2s linear infinite alternate;
+
+
+    }
+
+    @-webkit-keyframes robot{
+    	from  {-webkit-transform: rotate(0deg);}
+        to    {-webkit-transform: rotate(10deg);}
+    }
+
+    #fly{
+        position: absolute;
+        width:56px;
+        height: 43px;
+        left:227px;
+        top:323px;
+        z-index: 8;
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation:fly 8s 2s linear infinite;
+
+    }
+
+    @-webkit-keyframes fly{        
+        0% {-webkit-transform: scale(0,0) translate(0px,0px);opacity:1}
+        30%   {-webkit-transform: scale(2,2) translate(-200px,-100px);opacity: 1}
+        100%   {-webkit-transform: scale(2,2) translate(-200px,-100px);opacity: 1}
+    }
+
+    #bklight{
+        position: absolute;
+        width:500px;
+        height:434px; 
+        left:0;
+        top:176px;
+        z-index: 9;
+        opacity: 0.7;
+        -webkit-animation:light 3s linear infinite ;
+    }
+
+    @-webkit-keyframes light
+    {
+        0%     {opacity: 0}
+        5%     {opacity: 1}
+        10%    {opacity: 0}
+        15%    {opacity: 1}
+        30%     {opacity: 0}
+        100%   {opacity: 0}
+    }
+
+    @-webkit-keyframes light1
+    {
+        0%     {opacity: 0.5}
+        5%     {opacity: 1}
+        10%    {opacity: 0.5}
+        15%    {opacity: 1}
+        100%   {opacity: 1}
+    }
+
+    #eye{
+        position: absolute;
+        width:71px;
+        height:21px;
+        left:220px;
+        top:53px;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation:eye 2s linear infinite alternate;
+
+    }
+
+    @-webkit-keyframes eye{
+        from   {opacity: 0}
+        to     {opacity: 1}
+    }
+
+    #catgun{
+        position: absolute;
+        width:66px;
+        height:123px;
+        left:-14px;
+        top:335px;
+        z-index: 10;
+        -webkit-transform-origin: 100% 100%;
+        -webkit-animation:gun 1s linear infinite alternate;
+    }
+    @-webkit-keyframes gun{
+
+        from  {-webkit-transform: translate(0px,0px) scale(1,1);}
+        to    {-webkit-transform: translate(22px,-5px) scale(1.7,1.7);}
+    }
+
+
+
+
+    #bottom{
+        position: absolute;
+        width:500px;
+        height:140px; 
+        left:0;
+        top:610px;
+        z-index: 1;
+    }
+
+/*    #kuang{
+        position: absolute;
+        width:437px;
+        height: 542px;
+        left: 43px;
+        top:104px;
+        z-index: 7;
+
+    }*/
+    
+    #downbox
+    {
+        position: absolute;
+        top: 226px;
+        width: 500px;
+        height: 407px;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+    #down1
+    {
+        position: absolute;
+        left: 47px;
+        z-index: 7;
+        /*-webkit-animation: changedown1 2s linear forwards;*/
+    }
+
+    #up
+    {
+         position: absolute;
+         top: 82px;
+         left: 36px;
+
+    }
+    
+    
+     @-webkit-keyframes changedown
+    {
+        from   {-webkit-transform:translate(0px,0px);}
+        to     {-webkit-transform:translate(0px,-132px);}
+    }
+
+    @-webkit-keyframes changedown1
+    {
+        from   {-webkit-transform: translate(0px,0px);}
+        to     {-webkit-transform: translate(0px,-132px);}
+    }
+    @-webkit-keyframes changebox
+    {
+        from   {height: 420px;}
+        to     {height: 288px;}
+    }
+
+
+     #front_box,#back_box
+    {
+        -webkit-transform-origin: 50% 0%;
+        position: absolute;
+        overflow: hidden;
+        /*-webkit-animation: fadeout 3s 0.5s linear forwards;*/
+    }
+
+    #huajuan
+    {
+        position: absolute;
+        width: 500px;
+        height: 750px;
+        /*-webkit-animation: huajuanmove 2s linear infinite alternate;*/
+    }
+
+    @-webkit-keyframes huajuanmove
+    {
+        from  {-webkit-transform: translate(0px,0px);}
+        to    {-webkit-transform: translate(0px,16px);}
+    }
+
+    #img_div
+    {
+        position: absolute;
+        top:226px;
+        left: 121px;
+        width: 277px;
+        height: 377px;
+        /*height: 288px;*/
+        background-color: #ffffff;
+        overflow: hidden;
+        /*-webkit-animation: changebox 2s linear forwards;*/
+    }
+
+/*---中心弹跳---*/
+    @-webkit-keyframes aa_in_bounce_center
+    {
+        0%{
+            opacity:0;
+            -webkit-transform:scale(.3)
+        }
+        50%{
+            opacity:1;
+            -webkit-transform:scale(1.05)
+        }
+        70%{
+            -webkit-transform:scale(.9)
+        }
+        100%{
+            -webkit-transform:scale(1)
+        }
+    }
+    @-webkit-keyframes aa_out_bounce_center
+    {
+        0%{
+            -webkit-transform:scale(1)
+        }
+        25%{
+            -webkit-transform:scale(.95)
+        }
+        50%{
+            opacity:1;
+            -webkit-transform:scale(1.1)
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:scale(.3)
+        }
+    }
+
+    /*---往下跳---*/
+    @-webkit-keyframes aa_in_bounce_down
+    {
+        0%{
+            opacity:0;
+            -webkit-transform:translateY(-2000px)
+        }
+        60%{
+            opacity:1;
+            -webkit-transform:translateY(30px)
+        }
+        80%{
+            -webkit-transform:translateY(-10px)
+        }
+        100%{
+            -webkit-transform:translateY(0)
+        }
+    }
+
+    @-webkit-keyframes aa_out_bounce_down
+    {
+        0%{
+            -webkit-transform:translateY(0)
+        }
+        20%{
+            opacity:1;
+            -webkit-transform:translateY(-20px)
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:translateY(2000px)
+        }
+    }
+/*---往上跳---*/
+    @-webkit-keyframes aa_in_bounce_up
+    {
+        0%{
+            opacity:0;
+            -webkit-transform:translateY(2000px)
+        }
+        60%{
+            opacity:1;
+            -webkit-transform:translateY(-30px)
+        }
+        80%{
+            -webkit-transform:translateY(10px)
+        }
+        100%{
+            -webkit-transform:translateY(0)
+        }
+    }
+    @-webkit-keyframes aa_out_bounce_up
+    {
+       0%{
+        -webkit-transform:translateY(0)
+        }
+        20%{
+            opacity:1;
+            -webkit-transform:translateY(20px)
+        }
+        100%{
+            opacity:0;
+            -webkit-transform:translateY(-2000px)
+        }
+    }  

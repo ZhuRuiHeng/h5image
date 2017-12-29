@@ -1,0 +1,300 @@
+#container
+{
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+#container >div,#container > img
+{
+    position: absolute;
+}
+
+#div1>div
+{
+    position: absolute;
+}
+#photo-card{
+	width: 430px;
+	height: 695px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	display: none;
+}
+.cenp{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	display: none;
+}
+
+
+#red{
+	position: absolute;
+	right: 13.79%;
+    top: 9%;
+    opacity: 0;
+}
+#bg1{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.bgg{
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-size: cover;
+	background-position: center;
+}
+
+#clock{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+    bottom: 78px;
+    left: 20px;
+    display: none;
+}
+.white{
+	width: 4px;
+	height: 80px;
+	background-color: white;
+	bottom: 58px;
+}
+#white1{
+	right: 10px;
+}
+#white2{
+	right: 20px;
+}
+#white3{
+	right: 30px;
+}
+#white4{
+	right: 40px;
+}
+#white5{
+	right: 50px;
+}
+#white6{
+	right: 60px;
+}
+#white7{
+	right: 70px;
+}
+#white8{
+	right: 80px;
+}
+#topwhite{
+	width: 100%;
+	background-color: white;
+	height: 33%;
+	top: 0;
+	opacity: 0;
+}
+#bottomwhite{
+	width: 100%;
+	background-color: white;
+	height: 33%;
+	bottom: 0;
+	opacity: 0;
+}
+#outerwhite{
+	position: relative;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+#outerwhite div{
+	position: absolute;
+}
+.blur{
+	filter: blur(7px);
+	-webkit-filter: blur(7px);
+}
+#word1{
+	bottom: 95px;
+    right: 24px;
+    display: none;
+}
+#word2{
+	bottom: 89px;
+	left: 50px;
+	display: none;
+}
+.bg{
+	-webkit-animation: bg3 2s linear,bg1 1s  2s linear;
+}
+
+.pagetitle{ margin:-125px 0;position:absolute;width:400px;height:250px;background:RGBA(255,255,255,0.6);top:50%;left:500px; opacity:0;overflow:hidden;}
+.pagetitle1{ margin:0 auto; width:360px; height:100%;}
+.titlecontent{width:360px;height:250px;line-height:150%;vertical-align:middle;display:table-cell;text-align:center;font-size:34px; color:#333;}
+
+ @-webkit-keyframes bg3{
+    0%{
+     -webkit-transform: scale(1.8);
+    }
+    10%{
+    -webkit-transform: scale(1.3);  
+    }
+    95%{
+    -webkit-transform: scale(1);    
+    }
+    100%{
+    -webkit-transform: scale(1);    
+    }
+}
+
+@-webkit-keyframes bg1{
+    0%{
+     -webkit-transform: scale(1);
+    }
+    30%{
+    -webkit-transform: scale(1.15); 
+    }
+    60%{
+    -webkit-transform: scale(1);    
+    }
+    80%{
+    -webkit-transform: scale(1.05); 
+    }
+    100%{
+    -webkit-transform: scale(1);    
+    }
+}
+@-webkit-keyframes interphoto{
+    0%{
+     -webkit-transform: scale(1);
+    }
+    30%{
+    -webkit-transform: scale(0.6);  
+    }
+    60%{
+    -webkit-transform: scale(1);    
+    }
+    80%{
+    -webkit-transform: scale(0.65); 
+    }
+    100%{
+    -webkit-transform: scale(1);    
+    }
+}
+@-webkit-keyframes white1{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white2{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white3{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white4{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white5{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white6{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white7{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes white8{
+    from{
+        height:0;
+    }
+    to{
+        height: 80px;
+    }
+}
+@-webkit-keyframes red{
+    0%{opacity: 1;}
+    10%{opacity: 1;}
+    20%{opacity: 1;}
+    30%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 0;}
+    60%{opacity: 1;}
+    70%{opacity: 1;}
+    80%{opacity: 1;}
+    90%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes topwhite{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes bottomwhite{
+    0%{opacity: 0;}
+    25%{opacity: 0.3;}
+    50%{opacity: 0;}
+    75%{opacity: 0.3;}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes titlein
+{
+    from  {opacity: 0;}
+    to    {opacity: 1;left:50px;}
+}
+
+@-webkit-keyframes titleout
+{
+    from  {opacity: 1;left:50px;}
+    to    {opacity: 0;left:500px;}
+}
+
+@-webkit-keyframes titleMove
+{
+    0%  {opacity: 1;left:50px;-webkit-transform: translate(0px,0px);}
+    25% {opacity: 1;left:50px;-webkit-transform: translate(10px,0px);}
+	75% {opacity: 1;left:50px;-webkit-transform: translate(-10px,0px);}
+	100%  {opacity: 1;left:50px;-webkit-transform: translate(0px,0px);}
+}
+

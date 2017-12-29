@@ -1,0 +1,1182 @@
+*
+    {
+        padding: 0px;
+        margin: 0px;
+        -webkit-box-sizing: border-box;
+    }
+
+    body
+    {
+        background-color: black;
+    }
+
+    #container
+    {
+        width: 500px;
+        height: 815px;
+        position: absolute;
+        overflow: hidden;
+        background: url(http://referer-image.szwwy.com/coolphoto/img/tpl46/bg.png);
+    }
+    #cleararea >div, #cleararea >img
+    {
+        position: absolute;
+    }
+    #yezi1
+    {
+        left: -34px;
+        top: -11px;
+    }
+    #qingchun1
+    {
+        left: 49px;
+        top: 18px;
+    }
+    #zixingche
+    {
+        left: 315px;
+        top: 71px;
+    }
+    #zi1
+    {
+        left: 62px;
+        top: 663px;
+    }
+    #yingwen1
+    {
+        left: 137px;
+        top: 719px;
+    }
+    #qing
+    {
+        left: 70px;
+        top: 667px;
+    }
+    #yedi
+    {
+        left: 392px;
+        top: 733px;
+    }
+    #div1h
+    {
+        left: 35px;
+        top: 253px;
+        width: 425px;
+        height: 280px;
+        background-color: #fff;
+        display: none;
+    }
+    #box1h
+    {
+        left: 5px;
+        top: 5px;
+        width: 415px;
+        height: 270px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div1s
+    {
+        left: 95px;
+        top: 186px;
+        width: 309px;
+        height: 472px;
+        background-color: #fff;
+    }
+    #box1s
+    {
+        left: 5px;
+        top: 5px;
+        width: 299px;
+        height: 462px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #line1
+    {
+        left: 432px;
+        top: 165px;
+        width: 1px;
+        height: 490px;
+        background-color: #000;
+
+    }
+    #chun
+    {
+        left: 101px;
+        top: 667px;
+    }
+    #bu
+    {
+        left: 133px;
+        top: 670px;
+    }
+    #shi1
+    {
+        left: 169px;
+        top: 667px;
+    }
+    #nian
+    {
+        left: 201px;
+        top: 667px;
+    }
+    #hua
+    {
+        left: 237px;
+        top: 667px;
+    }
+    #douhao
+    {
+        left: 272px;
+        top: 690px;
+    }
+    #er
+    {
+        left: 304px;
+        top: 670px;
+    }
+    #shi
+    {
+        left: 336px;
+        top: 667px;
+    }
+    #xin
+    {
+        left: 369px;
+        top: 667px;
+    }
+    #jing
+    {
+        left: 400px;
+        top: 667px;
+    }
+    @-webkit-keyframes fadein
+    {
+        from  {opacity: 0}
+        to    {opacity: 1}
+    }
+    @-webkit-keyframes fadeout
+    {
+        to    {opacity: 0}
+        from  {opacity: 1}
+    }
+    @-webkit-keyframes in_center
+    {
+        0% {opacity: 0;-webkit-transform: scale3d(.3, .3, .3);transform: scale3d(.3, .3, .3);}
+        50% {opacity: 1;}
+        100% {-webkit-transform: scale3d(1,1,1);opacity: 1}
+    }
+    @-webkit-keyframes out_center
+    {
+        100% {opacity: 0;-webkit-transform: scale3d(.3, .3, .3);transform: scale3d(.3, .3, .3);}
+        50% {opacity: 1;}
+        0% {opacity: 1;-webkit-transform: scale3d(1,1,1);}
+    }
+    @-webkit-keyframes line1s
+    {
+        from  {opacity: 1}
+    }
+    @-webkit-keyframes zixingche
+    {
+        from  {-webkit-transform: translate(185px,0px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line1
+    {
+        from  {-webkit-transform: translate(0px,-300px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes zixingche_out
+    {
+        to    {-webkit-transform: translate(185px,0px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line1_out
+    {
+        to    {-webkit-transform: translate(0px,-300px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes showzimu
+    {
+        from  {-webkit-transform: translate(10px,-5px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes diszimu
+    {
+        to    {-webkit-transform: translate(10px,-5px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}       
+    }
+    #yezi2
+    {
+        left: -70px;
+        top: -18px;
+    }
+    #qingchun2
+    {
+        left: 233px;
+        top: 33px;
+    }
+    #xiangji
+    {
+        left: 86px;
+        top: 173px;
+    }
+    #line2
+    {
+        width: 1px;
+        height: 382px;
+        left: 420px;
+        top: 243px;
+        background-color: #000;
+    }
+    #zi2
+    {
+        left: 36px;
+        top: 663px;
+    }
+    #yingwen2
+    {
+        left: 125px;
+        top: 717px;
+    }
+    #div2h
+    {
+        left: 44px;
+        top: 274px;
+        width: 412px;
+        height: 300px;
+        background-color: #fff;
+    }
+    #box2h
+    {
+        left: 5px;
+        top: 5px;
+        width: 402px;
+        height: 290px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div2s
+    {
+        left: 116px;
+        top: 242px;
+        width: 267px;
+        height: 416px;
+        background-color: #fff;
+    }
+    #box2s
+    {
+        left: 5px;
+        top: 5px;
+        width: 257px;
+        height: 406px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #qing2
+    {
+        left: 48px;
+        top: 667px;
+    }
+    #chun2
+    {
+        left: 81px;
+        top: 667px;
+    }
+    #shi2
+    {
+        left: 114px;
+        top: 667px;
+    }
+    #jin2
+    {
+        left: 148px;
+        top: 667px;
+    }
+    #shu2
+    {
+        left: 181px;
+        top: 667px;
+    }
+    #yu2
+    {
+        left: 218px;
+        top: 669px;
+    }
+    #ni2
+    {
+        left: 249px;
+        top: 667px;
+    }
+    #yi2
+    {
+        left: 283px;
+        top: 685px;
+    }
+    #ci2
+    {
+        left: 316px;
+        top: 667px;
+    }
+    #de2
+    {
+        left: 349px;
+        top: 667px;
+    }
+    #hua2
+    {
+        left: 382px;
+        top: 667px;
+    }
+    #ji2
+    {
+        left: 414px;
+        top: 667px;
+    }
+    @-webkit-keyframes div2in
+    {
+        from  {-webkit-transform: translate(465px,-162px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes div2out
+    {
+        to    {-webkit-transform: translate(465px,-162px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes xiangji
+    {
+        from  {-webkit-transform: translate(-200px,0px);opacity: 0;}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes xiangji_out
+    {
+        to    {-webkit-transform: translate(-200px,0px);opacity: 0;}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line2
+    {
+        from  {-webkit-transform: translate(0px,-400px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1} 
+    }
+    @-webkit-keyframes line2_out
+    {
+        to    {-webkit-transform: translate(0px,-400px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1} 
+    }
+    #line3
+    {
+        left: 428px;
+        top: 396px;
+        width: 1px;
+        height: 257px;
+        background-color: #000;
+    }
+    #div31h
+    {
+        left: 35px;
+        top: 208px;
+        width: 347px;
+        height: 245px;
+        background-color: #fff;
+    }
+    #box31h
+    {
+        left: 5px;
+        top: 5px;
+        width: 337px;
+        height: 235px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div32h
+    {
+        left: 188px;
+        top: 423px;
+        width: 278px;
+        height: 208px;
+        background-color: #fff;
+    }
+    #box32h
+    {
+        left: 5px;
+        top: 5px;
+        width: 268px;
+        height: 198px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div31s
+    {
+        left: 41px;
+        top: 156px;
+        width: 237px;
+        height: 352px;
+        background-color: #fff;
+    }
+    #box31s
+    {
+        left: 5px;
+        top: 5px;
+        width: 227px;
+        height: 342px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div32s
+    {
+        left: 258px;
+        top: 333px;
+        width: 200px;
+        height: 306px;
+        background-color: #fff;
+    }
+    #box32s
+    {
+        left: 5px;
+        top: 5px;
+        width: 190px;
+        height: 296px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #beibao
+    {
+        left: 93px;
+        top: 555px;
+    }
+    #zi3
+    {
+        left: 66px;
+        top: 672px;
+    }
+    #yingwen3
+    {
+        left: 120px;
+        top: 725px;
+    }
+    #qingchun3
+    {
+        left: 251px;
+        top: 21px;
+    }
+    #qing3
+    {
+        left: 72px;
+        top: 676px;
+    }
+    #chun3
+    {
+        left: 105px;
+        top: 676px;
+    }
+    #shi3
+    {
+        left: 138px;
+        top: 676px;
+    }
+    #shou3
+    {
+        left: 171px;
+        top: 676px;
+    }
+    #fu3
+    {
+        left: 204px;
+        top: 676px;
+    }
+    #za3
+    {
+        left: 237px;
+        top: 676px;
+    }
+    #er3
+    {
+        left: 270px;
+        top: 678px;
+    }
+    #nai3
+    {
+        left: 303px;
+        top: 676px;
+    }
+    #du3
+    {
+        left: 336px;
+        top: 676px;
+    }
+    #de3
+    {
+        left: 369px;
+        top: 676px;
+    }
+    #shi31
+    {
+        left: 400px;
+        top: 676px;
+    }
+    @-webkit-keyframes div31in
+    {
+        from  {-webkit-transform: translate(-300px,0px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes div31out
+    {
+        to    {-webkit-transform: translate(-300px,0px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes div32in
+    {
+        from  {-webkit-transform: translate(300px,0px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes div32out
+    {
+        to    {-webkit-transform: translate(300px,0px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line3
+    {
+        from  {-webkit-transform: translate(0px,400px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line3_out
+    {
+        to    {-webkit-transform: translate(0px,400px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    #qingchun4
+    {
+        left: 5px;
+        top: 193px;
+    }
+    #yumaoqiu
+    {
+        left: 336px;
+        top: 554px;
+    }
+    #zi4
+    {
+        left: 68px;
+        top: 682px;
+    }
+    #yingwen4
+    {
+        left: 117px;
+        top: 725px;
+    }
+    #div41h
+    {
+        left: 179px;
+        top: 97px;
+        width: 279px;
+        height: 266px;
+        background-color: #fff;
+        -webkit-transform-origin: 0% 100%;
+    }
+    #box41h
+    {
+        left: 5px;
+        top: 5px;
+        width: 269px;
+        height: 256px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div42h
+    {
+        left: 38px;
+        top: 373px;
+        width: 279px;
+        height: 267px;
+        background-color: #fff;
+        -webkit-transform-origin: 100% 100%;
+    }
+    #box42h
+    {
+        left: 5px;
+        top: 5px;
+        width: 269px;
+        height: 256px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div41s
+    {
+        left: 224px;
+        top: 39px;
+        width: 235px;
+        height: 349px;
+        background-color: #fff;
+        -webkit-transform-origin: 0% 100%;
+    }
+    #box41s
+    {
+        left: 5px;
+        top: 5px;
+        width: 225px;
+        height: 339px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div42s
+    {
+        left: 51px;
+        top: 330px;
+        width: 220px;
+        height: 330px;
+        background-color: #fff;
+        -webkit-transform-origin: 100% 100%;
+    }
+    #box42s
+    {
+        left: 5px;
+        top: 5px;
+        width: 210px;
+        height: 320px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #line41
+    {
+        left: 422px;
+        top: 77px;
+        width: 2px;
+        height: 308px;
+        background-color: #000;
+    }
+    #line42
+    {
+        left: 71px;
+        top: 359px;
+        width: 1px;
+        height: 298px;
+        background-color: #000;
+    }
+    #qing4
+    {
+        left: 71px;
+        top: 686px;
+    }
+    #chun4
+    {
+        left: 104px;
+        top: 686px;
+    }
+    #shi4
+    {
+        left: 138px;
+        top: 686px;
+    }
+    #sheng4
+    {
+        left: 174px;
+        top: 686px;
+    }
+    #ming4
+    {
+        left: 208px;
+        top: 686px;
+    }
+    #de4
+    {
+        left: 243px;
+        top: 686px;
+    }
+    #shen4
+    {
+        left: 276px;
+        top: 686px;
+    }
+    #quan4
+    {
+        left: 309px;
+        top: 686px;
+    }
+    #zai4
+    {
+        left: 344px;
+        top: 686px;
+    }
+    #yong4
+    {
+        left: 375px;
+        top: 686px;
+    }
+    #liu4
+    {
+        left: 409px;
+        top: 686px;
+    }
+    @-webkit-keyframes div4in
+    {
+        from  {-webkit-transform: scale(.2);opacity: 0}
+        to    {-webkit-transform: scale(1);opacity: 1}
+    }
+    @-webkit-keyframes div4out
+    {
+        from  {-webkit-transform: scale(1);opacity: 1}
+        to    {-webkit-transform: scale(.2);opacity: 0}
+    }
+    @-webkit-keyframes line41in
+    {
+        from   {-webkit-transform: translate(0px,-400px);opacity: 0}
+        to     {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line41out
+    {
+        to    {-webkit-transform: translate(0px,-400px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line42in
+    {
+        from   {-webkit-transform: translate(0px,400px);opacity: 0}
+        to     {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line42out
+    {
+        to     {-webkit-transform: translate(0px,400px);opacity: 0}
+        from   {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes yumaoqiu
+    {
+        from  {-webkit-transform: translate(300px,0px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes yumaoqiu_out
+    {
+        to    {-webkit-transform: translate(300px,0px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    #line5
+    {
+        left: 456px;
+        top: 195px;
+        width: 1px;
+        height: 235px;
+        background-color: #000;
+    }
+    #div51h
+    {
+        left: 27px;
+        top: 216px;
+        width: 223px;
+        height: 183px;
+        background-color: #fff;
+    }
+    #box51h
+    {
+        left: 5px;
+        top: 5px;
+        width: 213px;
+        height: 173px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div52h
+    {
+        left: 260px;
+        top: 217px;
+        width: 223px;
+        height: 183px;
+        background-color: #fff;
+    }
+    #box52h
+    {
+        left: 5px;
+        top: 5px;
+        width: 213px;
+        height: 173px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div53h
+    {
+        left: 27px;
+        top: 408px;
+        width: 320px;
+        height: 230px;
+        background-color: #fff;
+    }
+    #box53h
+    {
+        left: 5px;
+        top: 5px;
+        width: 310px;
+        height: 220px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div51s
+    {
+        left: 45px;
+        top: 104px;
+        width: 180px;
+        height: 270px;
+        background-color: #fff;
+    }
+    #box51s
+    {
+        left: 5px;
+        top: 5px;
+        width: 170px;
+        height: 260px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div52s
+    {
+        left: 282px;
+        top: 159px;
+        width: 146px;
+        height: 222px;
+        background-color: #fff;
+    }
+    #box52s
+    {
+        left: 5px;
+        top: 5px;
+        width: 136px;
+        height: 212px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #div53s
+    {
+        left: 113px;
+        top: 356px;
+        width: 210px;
+        height: 316px;
+        background-color: #fff;
+    }
+    #box53s
+    {
+        left: 5px;
+        top: 5px;
+        width: 200px;
+        height: 306px;
+        position: absolute;
+        overflow: hidden;
+    }
+    #qingchun5
+    {
+        left: 286px;
+        top: 21px;
+    }   
+    #bao
+    {
+        left: 357px;
+        top: 427px;
+    }
+    #zi5
+    {
+        left: 37px;
+        top: 680px;
+        width: 426px;
+        height: 55px;
+    }
+    #yingwen5
+    {
+        top: 733px;
+        left: 103px;
+    }
+    #qing5
+    {
+        left: 50px;
+        top: 683px;
+    }
+    #chun5
+    {
+        left: 83px;
+        top: 683px;
+    }
+    #shi5
+    {
+        left: 116px;
+        top: 684px;
+    }
+    #da5
+    {
+        left: 149px;
+        top: 683px;
+    }
+    #kai5
+    {
+        left: 182px;
+        top: 684px;
+    }
+    #le5
+    {
+        left: 215px;
+        top: 684px;
+    }
+    #jiu5
+    {
+        left: 248px;
+        top: 683px;
+    }
+    #he5
+    {
+        left: 281px;
+        top: 683px;
+    }
+    #bu5
+    {
+        left: 314px;
+        top: 685px;
+    }
+    #shang5
+    {
+        left: 347px;
+        top: 683px;
+    }
+    #de5
+    {
+        left: 380px;
+        top: 683px;
+    }
+    #shu5
+    {
+        left: 413px;
+        top: 683px;
+    }
+    @-webkit-keyframes line5
+    {
+        from  {-webkit-transform: translate(0px,-300px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: }
+    }
+    @-webkit-keyframes line5_out
+    {
+        to    {-webkit-transform: translate(0px,-300px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: }
+    }
+    @-webkit-keyframes bao
+    {
+        from  {-webkit-transform: translate(200px,0px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes bao_out
+    {
+        to    {-webkit-transform: translate(200px,00px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    #yezi6
+    {
+        left: -41px;
+        top: -11px;
+    }
+    #qingchun6
+    {
+        left: 32px;
+        top: 48px;
+    }
+    #che
+    {
+        left: 353px;
+        top: 54px;
+    }
+    #line6
+    {
+        left: 450px;
+        top: 118px;
+        width: 2px;
+        height: 259px;
+        background-color: #000;
+    }
+    #div61h
+    {
+        left: 25px;
+        top: 202px;
+        width: 230px;
+        height: 150px;
+        background-color: #fff;
+        -webkit-transform-origin: 100% 100%;
+    }
+    #box61h
+    {
+        position: absolute;
+        width: 220px;
+        height: 140px;
+        left: 5px;
+        top: 5px;
+        overflow: hidden;
+    }
+    #div62h
+    {
+        left: 258px;
+        top: 164px;
+        width: 220px;
+        height: 160px;
+        background-color: #fff;
+        -webkit-transform-origin: 0% 100%;
+    }
+    #box62h
+    {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 210px;
+        height: 150px;
+        overflow: hidden;
+    }
+    #div63h
+    {
+        left: 65px;
+        top: 363px;
+        width: 370px;
+        height: 254px;
+        background-color: #fff;
+        -webkit-transform-origin: 0% 100%;
+    }
+    #box63h
+    {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 360px;
+        height: 244px;
+        overflow: hidden;
+    }
+    #div61s
+    {
+        left: 45px;
+        top: 161px;
+        width: 150px;
+        height: 224px;
+        background-color: #fff;
+        -webkit-transform-origin: 100% 100%;
+    }
+    #box61s
+    {
+        position: absolute;
+        width: 140px;
+        height: 214px;
+        left: 5px;
+        top: 5px;
+        overflow: hidden;
+    }
+    #div62s
+    {
+        left: 313px;
+        top: 147px;
+        width: 159px;
+        height: 251px;
+        background-color: #fff;
+    }
+    #box62s
+    {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 149px;
+        height: 241px;
+        overflow: hidden;
+    }
+    #div63s
+    {
+        left: 136px;
+        top: 312px;
+        width: 231px;
+        height: 343px;
+        background-color: #fff;
+        -webkit-transform-origin: 0% 100%;
+    }
+    #box63s
+    {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 221px;
+        height: 333px;
+        overflow: hidden;
+    }
+    #zi6
+    {
+        left: 37px;
+        top: 650px;
+    }
+    #yingwen6
+    {
+        left: 139px;
+        top: 703px;
+    }
+    #qing6
+    {
+        left: 50px;
+        top: 654px;
+    }
+    #chun6
+    {
+        left: 83px;
+        top: 654px;
+    }
+    #shi6
+    {
+        left: 118px;
+        top: 654px;
+    }
+    #yi6
+    {
+        left: 152px;
+        top: 670px;
+    }
+    #chang6
+    {
+        left: 182px;
+        top: 654px;
+    }
+    #xiang6
+    {
+        left: 215px;
+        top: 654px;
+    }
+    #feng6
+    {
+        left: 248px;
+        top: 654px;
+    }
+    #dou6
+    {
+        left: 281px;
+        top: 680px;
+    }
+    #wang6
+    {
+        left: 314px;
+        top: 654px;
+    }
+    #bu6
+    {
+        left: 347px;
+        top: 654px;
+    }
+    #diao6
+    {
+        left: 380px;
+        top: 654px;
+    }
+    #le6
+    {
+        left: 413px;
+        top: 654px;
+    }
+    @-webkit-keyframes line6
+    {
+        from  {-webkit-transform: translate(0px,-300px);opacity: 0}
+        to    {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+    @-webkit-keyframes line6_out
+    {
+        to    {-webkit-transform: translate(0px,-300px);opacity: 0}
+        from  {-webkit-transform: translate(0px,0px);opacity: 1}
+    }
+@-webkit-keyframes linechange
+{
+    to  {-webkit-transform: scale(1,1);}
+}
+@-webkit-keyframes shuye 
+{
+    from  {-webkit-transform: translate(0px,0px) rotate(0deg);}
+    to    {-webkit-transform: translate(-600px,750px) rotate(720deg);}
+
+}

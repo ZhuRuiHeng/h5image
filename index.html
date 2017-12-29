@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="format-detection" content="telephone=no,address=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="full-screen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="360-fullscreen" content="true" />
+    <meta name="renderer" content="webkit">
+    <meta name="Copyright" content="WeiWeiYin">
+    <title>{$info.title|default="炫彩相册"}</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://referer-image.szwwy.com/coolphoto/js/ctrl.min.js?t=13" type="text/javascript"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+    <script src="http://referer-image.szwwy.com/coolphoto/js/tpl{$info.tpl}.min.js?t=3" type="text/javascript"></script>
+    <script src="http://referer-image.szwwy.com/coolphoto/js/viewport.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://referer-image.szwwy.com/coolphoto/css/main.min.css?t=2" />
+    <link type="text/css" rel="stylesheet" href="http://referer-image.szwwy.com/coolphoto/css/tpl{$info.tpl}.min.css?t=1" />
+</head>
+<body style="background-color: white;">
+<!--     <div style="display: none">
+        <img src="{$info.cover}" alt="" />
+    </div> -->
+    <input id="photoid" type="hidden" value="{$info.Id}" />
+    <div id="wraper_music">
+        <audio loop="loop" preload="preload" id="audio_bgmusic" src=""></audio>
+        <a id="div_music" class="fl" style="float: left;">
+            <div id="btn_play_music" class="c_btn_play_music_playing"></div>
+        </a>
+    </div>
+    <section>
+    <div id="MusicView">
+        <ul>
+            <div class='musicType'>
+                <div class='all'>
+                    <span class='all'>全部</span><span class='sweet'>甜蜜</span><span class='quiet'>安静</span><span class='relax'>轻松</span><span class='lonely'>寂寞</span><span class='happy'>开心</span>
+                    <div class="clrBox">
+                    </div>
+                </div>
+            </div>
+            <div class="musicType search" style="display: block">
+                <div class="all">
+                    <input type="text" id="keyword" placeholder="请输入歌名" style="  ">
+                    <input type="button" id="search" value="搜索" onclick="search()" style="  ">
+                </div>
+            </div>
+            <div id='MusicList' class='all'>
+                <li class="sweet">
+                    <div id="MusicItem{$music.id}" class="musicItem lyric select">
+                        <div class="musicItemTitle">
+                            当前歌曲：{$music.name}</div>
+                        <div class="musicItemAfter">
+                            <div class="musicStatus" data-info="{$music.musicUrl}" data-lyric="">
+                            </div>
+                            <div class="clrBox">
+                            </div>
+                        </div>
+                        <div class="clrBox">
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </ul>
+        <nav>
+            <a href="javascript:;" id="MusicCancel"></a><span></span>
+            <a href="javascript:;" id="MusicSelect"></a>
+        </nav>
+    </div>
+        <notempty name="auth">
+            <div id="TempleView">
+                <div class="TempSelet">
+                    <ul>
+                        <li class="select" data="hot">热门</li>
+                        <li data="new">最新</li>
+                        <li data="xinqing">心情</li>
+                        <li data="aiqing">爱情</li>
+                        <li data="ertong">儿童</li>
+                        <li data="jieri">节日</li>
+                        <li data="fengjing">风景</li>
+                        <li data="d3">3D</li>
+                    </ul>
+                </div>
+                <div id="templeGroup" style="top:70px;">
+                </div>               
+                <nav>
+                    <a href="javascript:templeView.hideTempleView();"></a>
+                </nav>
+            </div>
+            <div id="div_editor">
+                <div id="editor_content">
+                    <div id="editor_content_frm">
+                        <div id="editor_change_content">
+                            <div>
+                                <div>
+                                    <input id="edit_album_title" type="text" maxlength="16" value="{$info.title}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="editor_content_titlebar">
+                        <div id="editor_content_caption">修改模板</div>
+                        <a class="fl" id="editor_content_closebtn" onclick="showEditorContent(0)">
+                            <div></div>
+                        </a>
+                        <a class="fr" id="editor_content_confirm" onclick="onConfirmClk()">
+                            <div></div>
+                        </a>
+                    </div>
+                </div>
+                <footer id="editor_toolbar">
+                    <div class="editor_btn_section">
+                        <a id="div_change_template" onclick="templeView.showTempleView()">换模板
+                    </a>
+                    </div>
+                    <div class="editor_btn_section">
+                        <a id="div_change_music" onclick="musicView.showMusicView()">选音乐
+                    </a>
+                    </div>
+                    <div class="editor_btn_section">
+                        <a id="div_change_content" onclick="onChangeTemplateClk(2)">改标题
+                    </a>
+                    </div>
+                    <div class="editor_btn_section" style="display:none">
+                        <a href="http://mp.weixin.qq.com/s?__biz=MzAxODMzMDMxOQ==&mid=207417973&idx=1&sn=e40c0ee9b103146cc92353aff7da36e9&scene=1&from=groupmessage&isappinstalled=0#rd">更多
+                    </a>
+                    </div>
+                </footer>
+            </div>
+        </notempty>
+        <div id="div_player">
+            <div id="img_viewer">
+                <img src="">
+            </div>
+            <div id="div_share">
+                <div id="sharetip" style="position: absolute; width: 100%; display: none" onclick="closeShare()">
+                    <img src="http://referer-image.szwwy.com/coolphoto/img/sharetip.png" style="width: 50%; float: right">
+                </div>
+                <div class="div_share_btn">
+                    <div class="share_btn" onclick="closeShare()">
+                        <div style="display: inline; margin-left: -30px;line-height: 1.5;">继续播放</div>
+                        <img src="http://referer-image.szwwy.com/coolphoto/img/replay.png" />
+                    </div>
+                    <div class="share_btn" style="margin-top: 45px;" onclick="share()">
+                        <div style="display: inline; margin-left: -30px;line-height: 1.5;">分享好友</div>
+                        <img src="http://referer-image.szwwy.com/coolphoto/img/share.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div_player_mask" style="display: block;">
+            <div id="div_mfdy_anim" class="effect_fadeIn"></div>
+            <div id="div_player_footer" class="effect_fadeIn">
+                <a id="div_player_btn_more" style="text-decoration: none; color: white;" href="{$jpurl|default="#"}">
+                    <div id="div_mfdy"></div>
+                </a>
+            </div>
+        </div>
+        <div id="wrapper_cover" style="width: 100%; height: 100%; pointer-events: none;">
+            <div id="wrapper_player_cover_bkgnd" style="display: none;">
+                <img id="img_cover" src="http://referer-image.szwwy.com/coolphoto/img/cover.jpg" style="width: 100%; height: 100%">
+                <div id="wrapper_player_cover_title"><span id="album_title" class="effect_fadeIn" style="display: block;">{$info.title|default="炫彩相册"}</span></div>
+            </div>
+            <div id="div_player_loadingText" style="width: 100%; height: 100%">
+                <span id="player_loadingText"></span>
+            </div>
+        </div>
+        <div id="div_error">
+            <div style="text-align: center">
+                <h1>糟糕，出错了！</h1>
+            </div>
+            <div><span id="txt_error_desc"></span></div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript">
+//图片留言+地址
+var images = [{$urls}];
+var c_tp={$info.tpl};
+var c_music={$info.music};
+
+//更换模板
+function changeTpl(tplid) {
+    $.post('./changeTpl', {
+        id: $("#photoid").val(),
+        tpl: tplid
+    }, function(data) {
+        if (data == 1) {
+            location.reload();
+        }
+    });
+}
+
+function onSaveTitle() {
+    var title = $("#edit_album_title");
+    //修改标题
+    $.post('./changeTitle', {
+        id: $("#photoid").val(),
+        title: title.val()
+    }, function(data) {
+        if (data == 1) {
+            location.reload();
+        }
+    });
+}
+
+function saveMusic() {
+    //修改音乐编号
+    $.post('./changeMusic', {
+        id: $("#photoid").val(),
+        music: JSON.stringify(c_music)
+    }, function(data) {
+        console.log(data);
+    });
+}
+
+function is_weixin(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$(document).ready(function() {
+
+    $("#wrapper_player_cover_bkgnd").css("height", $(window).height()); // - 70
+    $("#div_player").css("height", $(window).height());
+    $("#div_player").css("width", $(window).width());
+
+    <notempty name="auth">
+    $("#div_editor").css("display", 'block');
+    $("#div_player_footer").css("display", 'none');
+    $("#div_mfdy_anim").css("display", 'none');
+    setTempSize();
+    </notempty>
+    if(!is_weixin())
+    {
+        musicView.init();
+    }
+    playPhoto();
+});
+</script>
+<script type="text/javascript">
+wx.config({
+    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+    appId: 'wx150384b0d74c5ac9', // 必填，公众号的唯一标识
+    timestamp: {$signpackage['timestamp']}, // 必填，生成签名的时间戳
+    nonceStr: '{$signpackage["nonceStr"]}', // 必填，生成签名的随机串
+    signature: '{$signpackage["signature"]}', // 必填，签名，见附录1
+    jsApiList: [
+        'onMenuShareAppMessage',
+        'onMenuShareQQ',
+        'onMenuShareWeibo',
+        'onMenuShareTimeline',
+        'getNetworkType'
+    ]
+});
+wx.ready(function() {
+    musicView.init();
+    wx.onMenuShareAppMessage({
+        title: '{$info.title|default="炫彩相册"}', // 分享标题
+        desc: '我制作了一个精美的音乐相册！点击打开看看吧~', // 分享描述
+        link: window.location.href, // 分享链接
+        imgUrl: 'http://referer-image.szwwy.com/coolphoto/img/share.jpg', // 分享图标
+        type: '', // 分享类型,music、video或link，不填默认为link
+        dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+        success: function() {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.onMenuShareQQ({
+        title: '{$info.title|default="炫彩相册"}', // 分享标题
+        desc: '我制作了一个精美的音乐相册！点击打开看看吧~', // 分享描述
+        link: window.location.href, // 分享链接
+        imgUrl: 'http://referer-image.szwwy.com/coolphoto/img/share.jpg', // 分享图标
+        success: function() {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.onMenuShareWeibo({
+        title: '{$info.title|default="炫彩相册"}', // 分享标题
+        desc: '我制作了一个精美的音乐相册！点击打开看看吧~', // 分享描述
+        link: window.location.href, // 分享链接
+        imgUrl: 'http://referer-image.szwwy.com/coolphoto/img/share.jpg', // 分享图标
+        success: function() {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.onMenuShareTimeline({
+        title: '{$info.title|default="炫彩相册"}', // 分享标题
+        link: window.location.href, // 分享链接
+        imgUrl: 'http://referer-image.szwwy.com/coolphoto/img/share.jpg', // 分享图标
+        success: function() {
+            // 用户确认分享后执行的回调函数
+        },
+        cancel: function() {
+            // 用户取消分享后执行的回调函数
+        }
+    });
+    wx.getNetworkType({
+        success: function(res) {
+            document.getElementById('audio_bgmusic').play();
+        }
+    });
+});
+</script>
+
+</html>
